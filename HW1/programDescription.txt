@@ -1,0 +1,19 @@
+Chaitanya Kulkarni (cuk170030)
+CS 6322 IR Assignment 1
+
+Algorithms and Data Structure:
+1. I have used HashMap to store token and its frequency. (Token as a key and frequency as a value)
+2. Program reads all files and processes each line one by one.
+3. Processing: Here all SGML tags, digits, special characters, possessives and multiple white spaces are removed and words with dash('-') are splitted up as 2 separate words.
+4. Once processing is done on particular line, line is split based on spaces and each word is added into hash map if newly occured or its frequency is updated.
+5. Now hash map is traversed to see number of tokens which occurs only once.
+6. To get 30 most frequent words I am sorting hash map in descending order based on its value and then returning its top 30 elements.
+
+Program design decisions for token creation:
+1. All upper case characters are converted into lower case and lower case characters are kept as it is.
+2. Words with dashes are separated into two like middle-class becomes middle class.
+3. From all the possessives, apostrophe before 's' and 's' has been removed
+4. If the word is abbreviated like U.S.A the dots are removed (USA)
+5. All SGML tags, extra spaces, digits and special characters are removed as well 
+
+Both the program together took a variable time to run between 2-3 sec
